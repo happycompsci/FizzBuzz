@@ -3,7 +3,7 @@
  */
 class FizzBuzz {
 
-    public static void main(String[] args) {
+    public static void main() {
 
         for (int i = 1; i < 100; i++) {
 
@@ -31,17 +31,14 @@ class FizzBuzz {
             }
         }
     }
-}
 
+    public static void doFizzBuzz(int i) {
+        doFizzBuzz();
+    }
 
-/**
- * Solve the FizzBuzz challenge.
- */
-class DoFizzBuzz {
-
-    public static void main(String[] args) {
-
-        int i = 1;
+    private static void doFizzBuzz() {
+        int i;
+        i = 1;
         while (i < 100) {
 
             // Find out which numbers divide i.
@@ -69,3 +66,5 @@ class DoFizzBuzz {
         }
     }
 }
+
+
